@@ -1,0 +1,189 @@
+/* ==================== BODY ====================*/
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+}
+
+
+
+/* ==================== NAV ====================*/
+header {
+  background-color: green;
+  margin: 0;
+  width: 100%;
+}
+
+nav {
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titulo-nav {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.centro-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+
+#datos-alumno {
+  font-size: 14px;
+}
+
+#barra-busqueda {
+  width: 200px;
+  padding: 5px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+}
+
+
+
+/* ==================== TITULOS SEPARADORES ==================== */
+.titulo-principal {
+  text-align: center;
+}
+
+
+
+/* ==================== BOTONES ORDENAMIENTO ====================*/ 
+.ordenamiento{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+#orden-alfabetico, #orden-precio{
+  background-color: rgb(118, 160, 118);
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#orden-alfabetico:hover, #orden-precio:hover{
+  background-color: rgb(67, 92, 67);
+  
+}
+
+
+
+/* ==================== CONTENEDORES ====================*/ 
+#contador-carrito{
+    padding: 10px;
+    font-size: 16px;
+}
+
+#contenedor-productos{
+    padding-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.card-producto img{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.card-producto{
+    border: 1px rgb(214, 214, 214) solid;
+    border-radius: 10px;
+    padding: 5px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.boton-agregar{
+    background-color: rgb(118, 160, 118);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    padding: 2%;
+    cursor: pointer;
+}
+.boton-agregar:hover{
+    background-color: rgb(67, 92, 67);
+}
+
+
+
+/* ==================== CARRITO ====================*/
+
+.bloque-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    width: 35%;
+    margin: auto;
+}
+
+.boton-eliminar{
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    margin-left: 10px;
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+}
+.boton-eliminar:hover{
+    background-color: rgb(107, 28, 28);
+}
+
+.carrito-vacio{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 50px;
+}
+
+.carrito-footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.total-carrito{
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 15px;
+    margin: 20px;
+}
+
+#vaciar-carrito{
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    padding: 1.5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#vaciar-carrito:hover{
+    background-color: rgb(107, 28, 28);
+}
